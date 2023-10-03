@@ -1,0 +1,59 @@
+#h2-getInTouch {
+    color: #2196F3;
+    font: "Comfortaa", cursive;
+}
+
+p {
+    color: #40514E;
+    font: 16px "Comfortaa", serif;
+    margin: 40px 134px 60px 134px;
+}
+
+#btn-ContactMe {
+    --color: #2196F3;
+    font-family: "Comfortaa", serif;
+    display: inline-block;
+    width: 8em;
+    height: 2.6em;
+    line-height: 2.5em;
+    overflow: hidden;
+    margin: 20px;
+    font-size: 17px;
+    z-index: 1;
+    color: #2196F3;
+    border: 2px solid #2196F3;
+    border-radius: 8px;
+    position: relative;
+}
+
+#btn-ContactMe:before {
+    position: absolute;
+    content: "";
+    background: #2196F3;
+    width: 200px;
+    height: 200px;
+    z-index: -1;
+    border-radius: 50%;
+}
+
+#btn-ContactMe:hover {
+    color: #fff;
+}
+
+#btn-ContactMe:before {
+    top: 100%;
+    left: 100%;
+    transition: .3s all;
+}
+
+#btn-ContactMe:hover::before {
+    top: -30px;
+    left: -30px;
+}
+
+.cdiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
